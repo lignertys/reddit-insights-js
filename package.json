@@ -16,7 +16,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "build": "npx tsup src/index.ts --format cjs,esm --dts",
     "prepublishOnly": "npm run build"
   },
   "keywords": [
