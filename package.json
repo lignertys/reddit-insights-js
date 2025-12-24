@@ -1,0 +1,45 @@
+{
+  "name": "reddit-insights",
+  "version": "1.0.0",
+  "description": "Official JavaScript/TypeScript SDK for the Reddit Insights API",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "reddit",
+    "insights",
+    "api",
+    "sdk",
+    "semantic-search",
+    "ai"
+  ],
+  "author": "Reddit Insights <support@reddit-insights.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lignertys/reddit-insights-js"
+  },
+  "homepage": "https://reddit-insights.com/developers",
+  "devDependencies": {
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
+
